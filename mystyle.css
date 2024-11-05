@@ -1,0 +1,359 @@
+/* General styles */
+body {
+    font-family: sans-serif, Verdana;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Header styles */
+header {
+    position: sticky;
+    top: 0;
+    font-family: sans-serif, Verdana;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f4f4f4;
+    padding: 20px;
+    color: rgb(0, 0, 0);
+    z-index: 1000;
+}
+
+nav ul {
+   
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+    color: black;
+}
+
+nav ul li a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+/* Intro Section */
+.intro {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.intro h1 {
+    font-size: 60px;
+    margin-bottom: 10px;
+}
+
+.intro h2 {
+    font-size: 1.5rem;
+    margin: 10px 0;
+}
+
+.image-collage {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.image-collage img {
+    width: 30%;
+    margin: 0 10px;
+    transition: transform 1s;
+}
+
+.image-collage img:nth-child(1) {
+    z-index: 1;
+    transform: translate(10%, 10%);
+}
+
+.image-collage img:nth-child(2) {
+    z-index: 2;
+    transform: translate(0, 0);
+}
+
+.image-collage img:nth-child(3) {
+    z-index: 1;
+    transform: translate(-10%, 10%);
+}
+
+/* Latest Travels Section */
+.latest-travels {
+    padding: 20px;
+    text-align: left;
+}
+
+.latest-travels h2 {
+    font: Arial;
+    margin-bottom: 10px;
+    margin-left: 50px;
+}
+
+.latest-travels p {
+    margin-bottom: 20px;
+    margin-left: 30px;
+}
+
+.travel-locations {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2px;
+    text-decoration: none;
+}
+
+.travel-locations div {
+    text-align: center;
+    text-decoration: none;
+}
+/*Images for locations*/
+.travel-locations img {
+    
+    width: 80%;
+    height: auto;
+    object-fit: cover;
+    background: #555;
+
+}
+/*Text for locations*/
+.travel-locations h3 {
+    text-align: left;
+    margin-top: 10px;
+    margin-left: 65px;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+}
+
+/* Footer */
+footer {
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    position: static;
+    bottom: 0;
+}
+
+/*WWho am I*/
+.who-am-i {
+    padding: 50px;
+    background-color: #f4f4f4;
+}
+
+.who-am-i-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.who-am-i-image img {
+    margin-left: 10px;
+    width: 700px;
+    height: 600px;
+    border-radius: 70px;
+}
+
+.who-am-i-text {
+    max-width: 500px;
+    margin-left: 10px;
+}
+
+.who-am-i-text h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.who-am-i-text p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.learn-more-btn {
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.learn-more-btn:hover {
+    background-color: #555;
+}
+
+/*Contact form*/
+.contact-form-container {
+    background-color: #8da36d;
+    padding: 20px;
+    border-radius: 15px;
+    width: 400px;
+    margin-left: 15px;
+    font-family: Arial, sans-serif;
+}
+
+.contact-form-container h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #1b1b1b;
+}
+
+.contact-form-container label {
+    display: block;
+    margin-top: 10px;
+    font-size: 14px;
+    color: #1b1b1b;
+}
+
+.contact-form-container input,
+.contact-form-container select,
+.contact-form-container textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.contact-form-container button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 15px;
+    background-color: #2e82ff;
+    border: none;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-form-container button:hover {
+    background-color: #1a6cdf;
+}
+
+textarea {
+    height: 100px;
+}
+
+/*End contact form*/
+
+/* Dropdown Button */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Button Style */
+.dropbtn {
+    /* background-color: #4CAF50; Green background */
+    color: black; /* Black text */
+    padding: 10px; /* Some padding */
+    font-size: 16px; /* Font size */
+    border: none; /* No border */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9; /* Light background color */
+    min-width: 160px; /* Minimum width */
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2); /* Shadow effect */
+    z-index: 1; /* Make sure it sits on top */
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+/* Change color of dropdown links on hover PSEUDO CLASS ELEMENT HERE*/
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+    background-color: #d9d9d9;
+}
+
+/* CSS for round images in contact form*/
+.contact-and-sponsors {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+}
+
+.form-container {
+    width: 40%;
+}
+
+.sponsors {
+    width: 50%;
+    text-align: center;
+}
+
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    justify-items: center;
+}
+
+.image-grid img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+
+
+/*Audio control*/
+.audio-control {
+    margin-left: 40%;
+    margin-top: 23%;
+}
+
+.empty-box {
+    width: 100%; /* Width of the box */
+    height: 450px; /* Height of the box */
+    background-color: #f4f4f4; 
+}
+.empty-box2 {
+    width: 100%; 
+    height: 50px; 
+    background-color: #f4f4f4; 
+}
+
+
+
+
+/*CS for Country pages*/
+.introCountries {
+    text-align: center;
+    margin: 0 auto;
+    max-width: 800px; 
+}
+
+.argentinaMap, .argentinaClip {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px auto; /* optional margin for spacing */
+    width: 100%;
+}
